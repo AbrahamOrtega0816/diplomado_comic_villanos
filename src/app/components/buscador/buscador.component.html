@@ -1,6 +1,6 @@
 <h1>Buscando <small>{{termino}}</small></h1>
 <hr>
-<div class="row animated fadeIn fast" *ngIf="comic.length == 0">
+<div class="row animated fadeIn fast" *ngIf="heroes.length == 0">
     <div class="col-md-12">
         <div class="alert alert-info">
             No existen resultados con el termino: {{termino}}
@@ -8,5 +8,5 @@
     </div>
 </div>
 <div class="card-columns">
-    <app-heroe-tarjeta [heroe]="item" [index]="item.idx" *ngFor="let item of comic"></app-heroe-tarjeta>
+    <app-heroe-tarjeta [heroe]="item" [index]="item.idx" *ngFor="let item of heroes"></app-heroe-tarjeta>
 </div>
