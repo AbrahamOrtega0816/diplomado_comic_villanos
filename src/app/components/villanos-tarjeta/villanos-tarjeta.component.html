@@ -1,0 +1,19 @@
+<div class="col card animated fadeIn fast">
+    <img width="30px" height="30px"
+    style="width:180px !important"
+    class="card-img-top img-fluid" [src]="villano.img" [alt]="villano.nombre">
+    <div class="card-body">
+        <h4 class="card-title"> {{ villano.nombre }} </h4>
+        <p class="card-text">
+            {{villano.bio}}
+        </p>
+        <p class="card-text">
+            <small class="text-muted">
+                {{villano.aparicion}}
+            </small>
+        </p>
+        <button (click)="vervillano()" type="button" class="btn btn-outline-primary btn-block">
+            Ver mas...
+        </button>
+    </div>
+</div>
